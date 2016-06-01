@@ -17,7 +17,7 @@ SET(src loadcaffe.cpp ${PROTO_SRCS})
 
 FILE(GLOB luasrc *.lua)
 
-add_definitions(-std=c++11)
+add_definitions(-std=c++0x)
 
 ADD_LIBRARY(loadcaffe MODULE ${src})
 TARGET_LINK_LIBRARIES(loadcaffe TH ${PROTOBUF_LIBRARIES})
